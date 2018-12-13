@@ -1,15 +1,16 @@
 $header-height: 55px;
 $content-width: 700px;
 
-$serif-families: "Ubuntu";
-$sans-serif-families: "Ubuntu";
+$font-ubuntu: "Ubuntu";
 
 $error-text-color: #B94A48;
 $success-text-color: #468847;
 
 *{
-	font-family: $sans-serif-families;
-	font-size: 25px;
+	font-family: $font-ubuntu;
+	font-size: 24px;
+	font-weight: normal; 
+	font-style: normal;  
 }
 
 body 
@@ -18,10 +19,8 @@ body
 }
 
 @font-face {  
-	font-family: 'Ubuntu';
-	src: font-url('/assets/fonts/Ubuntu-Title.ttf') format('embedded-opentype');
-	font-weight: normal;  
-	font-style: normal;  
+	font-family: $font-ubuntu;
+	src: font-url('Ubuntu-Title.ttf');
 }  
 
 @mixin shadow($color, $x, $y, $radius) {
@@ -48,8 +47,8 @@ header{
 		float: left;
 		a{
 			color: #333;
-			font-family: $serif-families;
-			font-weight: 400;
+			font-family: $font-ubuntu;
+			font-weight: 100;
 			font-size: 2.5em;
 			&:hover{
 				color: #000;
@@ -79,8 +78,8 @@ header nav{
 
 		a{
 			display: block;
-			font-size: 12px;
-			font-weight: 600;
+			font-size: 24px;
+			font-weight: 100;
 			color: #FFFFFF
 		}
 	}
