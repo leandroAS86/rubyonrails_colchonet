@@ -1,5 +1,6 @@
 $header-height: 55px;
-$content-width: 700px;
+$header-width: 800px;
+$content-width: 800px;
 
 $font-ubuntu: "Ubuntu";
 
@@ -20,7 +21,7 @@ body
 
 @font-face {  
 	font-family: $font-ubuntu;
-	src: font-url('Ubuntu-Title.ttf');
+	src: font-url('Ubuntu-Title.ttf') format('truetype');
 }  
 
 @mixin shadow($color, $x, $y, $radius) {
@@ -33,7 +34,7 @@ header{
 	@include shadow(#ccc, 0, 3px, 6px);
 
 	border-bottom: 1px solid #686;
-	margin-bottom: 15px;
+	margin-bottom: 10px;
 
 	#header-wrape{
 		width: $content-width;
@@ -41,12 +42,16 @@ header{
 	}
 
 	height: $header-height;
+	width: $header-width;
 	background-color: #9ECE71;
+	padding-right: 10px;
+	padding-left: 10px;
+	margin: 0 auto;
 
 	h1{
 		float: left;
 		a{
-			color: #333;
+			color: #ffffff;
 			font-family: $font-ubuntu;
 			font-weight: 100;
 			font-size: 2.5em;
