@@ -118,7 +118,7 @@ form {
 		color: #444;
 	}
 
-	input[type=text], input[type=passwor], textarea{
+	input[type=text], input[type=password], textarea{
 		color: #444;
 		font-size: 12px;
 		border: 1px solid #ccc;
@@ -145,7 +145,7 @@ form {
 		color: $error-text-color;
 	}
 
-	input[type=text], input[type=passord], textarea {
+	input[type=text], input[type=password], textarea {
 		border: 1px solid rgba(189, 74, 72, 0.5);
 		@include shadow(rgba(189, 74, 72, 0.2), 0px, 0px, 8px);
 
