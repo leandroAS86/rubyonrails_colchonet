@@ -1,6 +1,6 @@
-$header-height: 55px;
-$header-width: 800px;
-$content-width: 800px;
+$header-height: 50px;
+$header-width: 50%;
+$content-width: 50%;
 
 $font-ubuntu: "Ubuntu";
 
@@ -37,7 +37,7 @@ header{
 	margin-bottom: 10px;
 
 	#header-wrap{
-		width: $content-width;
+		width: 100%;
 		margin: 0 auto;
 	}
 
@@ -54,7 +54,8 @@ header{
 			color: #ffffff;
 			font-family: $font-ubuntu;
 			font-weight: 100;
-			font-size: 2.5em;
+			font-size: 1.5em;
+			line-height: 55px;
 			&:hover{
 				color: #000;
 			}
@@ -73,7 +74,7 @@ header nav{
 
 	li {
 		display: inline-block;
-		line-height: 24px;
+		line-height: 16px;
 		background-color: #546F3C;
 		padding: 3px 10px;
 
@@ -83,8 +84,8 @@ header nav{
 
 		a{
 			display: block;
-			font-size: 24px;
-			font-weight: 100;
+			font-size: 16px;
+			font-weight: 300;
 			color: #FFFFFF
 		}
 	}
